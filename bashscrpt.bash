@@ -3,8 +3,8 @@ echo "Please enter argument: "
 read arg
 if   [ -d "$arg" ]
 then echo "$arg is a directory";
-for i in $(ls -d $arg);
-do echo ${i};
+for i in $(ls $arg);
+do echo "$arg contains:  ${i}";
 done
 elif [ -f "$arg" ]
 then echo "$arg is a file";
