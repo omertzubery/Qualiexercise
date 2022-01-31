@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Please enter argument: "
-read arg
+arg = README.md
 if   [ -d "$arg" ]
 then echo "$arg is a directory";
 for i in $(ls $arg);
