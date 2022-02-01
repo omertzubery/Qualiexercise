@@ -4,7 +4,7 @@ node{
     }
     stage('scriptbash'){
         script{
-            sh 'bash bashscrpt.bash /bin/bash'
+            sh 'bashscrpt.bash'
         }
     }
 }
