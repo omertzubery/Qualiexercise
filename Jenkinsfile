@@ -7,7 +7,7 @@ node{
             script{
                 sh 'chmod 555 bashscrpt'
                 sh './bashscrpt'
-            }
+           }
     }
     stage('dockerbuild'){
         dockerfile {
