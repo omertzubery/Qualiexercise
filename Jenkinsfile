@@ -7,5 +7,9 @@ node{
             script{
                 sh 'bash bashscrpt.bash /bin/bash'
         }
+    stage('dockerbuild')
+        dockerfile {
+            additionalBuildArgs  '--tag alpine:master'
+            args '-v $WORKSPACE:/project -w /project -v /extras:/extras -e PYTHONPATH=/project'
     }
 }
