@@ -15,4 +15,7 @@ node{
             args '-v $WORKSPACE:/project -w /project -v /extras:/extras -e PYTHONPATH=/project'
         }  
     }
+    stage('dockercheck'){
+        sh 'sudo docker ps'
+    }
 }
