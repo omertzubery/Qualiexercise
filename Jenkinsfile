@@ -6,6 +6,7 @@ node{
         git 'https://github.com/omertzubery/Qualiexercise.git'
             script{
                 sh 'bash bashscrpt.bash /bin/bash'
+            }
     }
     stage('dockerbuild'){
         dockerfile {
