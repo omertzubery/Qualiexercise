@@ -3,8 +3,9 @@ node{
         echo 'Omer Pipline'
     }
     stage('scriptbash'){
-        script{
-            sh 'bashscrpt'
+        git clone 'https://github.com/omertzubery/Qualiexercise.git'
+            script{
+                sh 'bash bashscrpt.bash /bin/bash'
         }
     }
 }
