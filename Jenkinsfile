@@ -5,7 +5,7 @@ node{
     stage('scriptbash'){
         git 'https://github.com/omertzubery/Qualiexercise.git'
             script{
-                sh 'bash bashscrpt.bash /bin/bash'
+                sh './bashscrpt.bash'
             }
     }
     stage('dockerbuild'){
