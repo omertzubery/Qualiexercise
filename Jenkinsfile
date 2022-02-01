@@ -6,10 +6,11 @@ node{
         git 'https://github.com/omertzubery/Qualiexercise.git'
             script{
                 sh 'bash bashscrpt.bash /bin/bash'
-        }
-    stage('dockerbuild')
+    }
+    stage('dockerbuild'){
         dockerfile {
             additionalBuildArgs  '--tag alpine:master'
             args '-v $WORKSPACE:/project -w /project -v /extras:/extras -e PYTHONPATH=/project'
+        }  
     }
 }
