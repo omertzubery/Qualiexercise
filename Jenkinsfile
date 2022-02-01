@@ -7,6 +7,7 @@ node{
             script{
                 sh './bashscrpt'
             }
+
     }
     stage('dockerbuild'){
         dockerfile {
