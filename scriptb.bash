@@ -10,5 +10,4 @@ elif [ -f "$arg" ]
 then echo "$arg is a file";
 bash df -Th $arg;
 else echo "$arg is not valid";
-exit 1
 fi
