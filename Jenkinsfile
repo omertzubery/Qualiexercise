@@ -16,6 +16,6 @@ node{
         }  
     }
     stage('dockercheck'){
-        sh 'sudo docker ps'
+        sh 'pwd'
     }
 }
