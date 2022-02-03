@@ -12,7 +12,7 @@ node{
     stage('dockerbuild'){
                 docker.image('python.on.docker')
     }
-    stage('dockercheck'){
-        dockerFingerprintRun '8ae9796618de'
+    stage('dockerrun'){
+                Image.run('python.on.docker')
     }
 }
