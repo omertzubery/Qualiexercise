@@ -10,7 +10,7 @@ node{
            }
     }
     stage('dockerbuild'){
-        Image.run([python.on.docker:v2 -p 8082:8082])
+        Image.run([python.on.docker:v2])
         }  
     }
     stage('dockercheck'){
