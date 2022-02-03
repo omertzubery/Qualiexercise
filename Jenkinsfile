@@ -13,7 +13,6 @@ node{
         script{
                sh 'docker.image(python.on.docker:v2).inside('')'
             }
-        }  
     }
     stage('dockercheck'){
         sh 'pwd'
