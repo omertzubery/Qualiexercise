@@ -10,7 +10,8 @@ node{
            }
     }
     stage('dockerbuild'){
-        Image.run([python.on.docker:v2])
+        script{docker.image(python.on.docker:v2).inside('')
+            }
         }  
     }
     stage('dockercheck'){
