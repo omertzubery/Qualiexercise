@@ -10,9 +10,7 @@ node{
            }
     }
     stage('dockerbuild'){
-        dockerfile {
-            additionalBuildArgs  '--tag alpine:master'
-            args '-v $WORKSPACE:/project -w /project -v /extras:/extras -e PYTHONPATH=/project'
+        Image.run([omertzubery/python.on.docker:v2 -p 8082:8082])
         }  
     }
     stage('dockercheck'){
