@@ -10,9 +10,9 @@ node{
            }
     }
     stage('dockerbuild'){
-                Image.run('python.on.docker')
+                docker.Image.run('python.on.docker')
     }
     stage('dockercheck'){
-        sh 'pwd'
+        dockerFingerprintRun '8ae9796618de'
     }
 }
