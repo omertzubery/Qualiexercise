@@ -13,6 +13,6 @@ node{
                 docker.image('python.on.docker')
     }
     stage('dockerrun'){
-                Image.run('python.on.docker')
+                docker.run('python.on.docker')
     }
 }
