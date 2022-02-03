@@ -10,10 +10,7 @@ node{
            }
     }
     stage('dockerbuild'){
-               docker.image('maven:3.3.3-jdk-8').inside{
-               git 'https://github.com/omertzubery/Qualiexercise.git'
-               sh 'mvn -B clean install'
-          }
+               docker.image('python.on.docker')
     }
     stage('dockercheck'){
         sh 'pwd'
