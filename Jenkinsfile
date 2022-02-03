@@ -10,7 +10,7 @@ node{
            }
     }
     stage('dockerbuild'){
-               docker.image.run('python.on.docker')
+                Image.run('python.on.docker')
     }
     stage('dockercheck'){
         sh 'pwd'
